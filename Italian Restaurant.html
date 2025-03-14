@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Olive Delight Restaurant</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #fffaf0; color: #333; text-align: center; margin: 0; padding: 0;">
+
+    <!-- Header Section -->
+    <div style="background-color: #556b2f; color: white; padding: 20px;">
+        <h1>Olive Delight</h1>
+        <p>Italian-Inspired Cuisine Made with Love</p>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div style="background-color: #eee; padding: 10px;">
+        <a href="#home" style="margin: 10px;">Home</a>
+        <a href="#menu" style="margin: 10px;">Menu</a>
+        <a href="#about" style="margin: 10px;">About Us</a>
+        <a href="#contact" style="margin: 10px;">Contact</a>
+    </div>
+
+    <!-- Home Section -->
+    <div id="home" style="padding: 30px;">
+        <h2>Welcome to Olive Delight!</h2>
+        <p>Come enjoy the finest pastas, soups, and warm Italian hospitality.</p>
+        <img src="https://via.placeholder.com/600x300?text=Delicious+Italian+Food" alt="Italian Food" style="width: 80%; max-width: 600px; border-radius: 10px;">
+    </div>
+
+    <!-- Menu Section -->
+    <div id="menu" style="padding: 30px; background-color: #f8f8f8;">
+        <h2>Our Menu</h2>
+        <ul style="list-style-type: none; padding: 0;">
+            <li>🍝 Spaghetti Marinara - $13</li>
+            <li>🥗 Caesar Salad - $8</li>
+            <li>🍕 Margherita Pizza - $10</li>
+            <li>🍤 Shrimp Alfredo Pasta - $14</li>
+        </ul>
+
+        <h3>Order Your Favorite Dish</h3>
+        <input type="text" id="dish" placeholder="Type a dish name..." style="padding: 5px;">
+        <button onclick="orderDish()" style="padding: 5px;">Order</button>
+        <p id="orderMessage" style="color: green; font-weight: bold;"></p>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" style="padding: 30px;">
+        <h2>About Us</h2>
+        <p>Olive Delight is a family-owned restaurant that brings the heart of Italy to your plate. Established in 1996, we’ve been serving delicious Italian meals made from fresh ingredients and secret family recipes.</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" style="padding: 30px; background-color: #f0f0f0;">
+        <h2>Contact Us</h2>
+        <p>Email: contact@olivedelight.com</p>
+        <p>Phone: (604)-873-0114</p>
+        <p>Visit us at: 123 Pasta Lane, Abbotsford bc</p>
+    </div>
+
+    <!-- Footer -->
+    <div style="background-color: #556b2f; color: white; padding: 15px;">
+        <p>&copy; 2025 Olive Delight Restaurant. All rights reserved.</p>
+    </div>
+
+    <!-- Basic JavaScript -->
+    <script>
+        function orderDish() {
+            var dish = document.getElementById("dish").value;
+            var message = "";
+
+            if (dish != "") {
+                message = "Thank you! Your order for '" + dish + "' has been placed.";
+            } else {
+                message = "Please enter a dish name before ordering.";
+            }
+
+            document.getElementById("orderMessage").innerText = message;
+        }
+    </script>
+
+</body>
+</html>
