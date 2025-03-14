@@ -1,0 +1,34 @@
+/*Moved body styling for clean code*/
+
+body{
+    font-family: Arial, sans-serif; background-color: #fffaf0; color: #333; text-align: center; margin: 0; padding: 0;
+}
+
+/*Header Background*/
+.hb{
+    background-color: #556b2f; color: white; padding: 20px;
+
+}
+
+/*Padding*/
+.pad{
+    margin: 10px;
+}
+
+.price{
+    text-align: right;
+}
+
+table{
+    margin: auto;
+    
+}
+td, th{
+    text-align: center;
+    padding: 3px;
+
+}
+
+.amount{
+    width: 50px;
+}

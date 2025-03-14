@@ -1,0 +1,107 @@
+<html>
+
+    <head>
+        <title>Olive Delight Restaurant</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="index.js"></script>
+
+    </head>
+
+    <body>
+        
+        <!-- Header Section -->
+        <div class="hb">
+            <h1>Olive Delight</h1>
+            <p>Italian-Inspired Cuisine; Made with Love</p>
+        </div>
+        
+        <!-- Navigation Menu -->
+        <div style="background-color: #eee; padding: 10px;">
+            <a class="pad" href="Italian Restaurant.html">Home</a>
+            <a class="pad" href="order.html">Order</a>
+            <a class="pad" href="Italian Restaurant.html#about" >About Us</a>
+            <a class="pad" href="#contact" >Contact</a>
+            
+        </div>
+
+        <!-- Menu Section -->
+        <div id="menu" style="padding: 30px; background-color: #f8f8f8;">
+            <h2>Our Menu</h2>
+            
+            <form id="orderForm">
+                <table>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Amount</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>🍝Spaghetti Marinara</td>
+                        <td class="price">$12.99</td>
+                        <td>
+                            <input type="number" name="Spaghetti" class="amount" id="spa" min="0" value="0">
+                            <label for="spa"></label>
+                        </td>
+                        
+                        
+                    </tr>
+
+                    <tr>
+                        <td>🥗Caesar Salad</td>
+                        <td class="price">$8.99</td>
+                        <td>
+                            <input type="number" name="Caesar" class="amount" id="cae" min="0" value="0">
+                            <label for="cae"></label>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>🍕Margherita Pizza</td>
+                        <td class="price">$10.99</td>
+                        <td>
+                            <input type="number" name="Margherita" class="amount" id="mar" min="0" value="0">
+                            <label for="mar"></label>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>🍤Alfredo Shrimp Pasta</td>
+                        <td class="price">$14.99</td>
+                        <td>
+                            <input type="number" name="Alfredo" class="amount" id="alf" min="0" value="0">
+                            <label for="alf"></label>
+                        </td>
+
+                    </tr>
+
+                    <tr></tr>
+
+                </table>
+                <br><br>
+                <button type="submit" id="order" onclick="orderSubmit()">Order</button>
+              
+            </form>
+            
+
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" style="padding: 30px; background-color: #f0f0f0;">
+            <h2>Contact Us</h2>
+            <a href="mailto:someone@gmail.com">contact@olivedelight.com</a>
+            <p>Phone: (604)-873-0114</p>
+            <p>Visit us at: 123 Pasta Lane, Abbotsford bc</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="hb">
+            <p>&copy; 2025 Olive Delight Restaurant. All rights reserved.</p>
+        </div>
+
+    </body>
+
+
+</html>
