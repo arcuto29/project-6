@@ -7,10 +7,21 @@ function orderSubmit() {
 
     let orderSummary = "";
 
-    if (spa > 0) orderSummary += `🍝 Spaghetti Marinara: ${spa}\n`;
-    if (cae > 0) orderSummary += `🥗 Caesar Salad: ${cae}\n`;
-    if (mar > 0) orderSummary += `🍕 Margherita Pizza: ${mar}\n`;
-    if (alf > 0) orderSummary += `🍤 Alfredo Shrimp Pasta: ${alf}\n`;
+    if (spa > 0){
+         orderSummary += "🍝 Spaghetti Marinara: ${spa}\n";
+    }
+
+    if (cae > 0){
+         orderSummary += "🥗 Caesar Salad: ${cae}\n";
+    }
+
+    if (mar > 0){ 
+        orderSummary += "🍕 Margherita Pizza: ${mar}\n";
+    }
+
+    if (alf > 0){ 
+        orderSummary += "🍤 Alfredo Shrimp Pasta: ${alf}\n";
+    }
 
     if (orderSummary === "") {
         alert("No items selected");
